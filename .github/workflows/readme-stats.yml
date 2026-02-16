@@ -20,12 +20,26 @@ jobs:
           OWNER: ${{ github.repository_owner }}
         run: |
           mkdir -p assets
-          curl -fsSL \
-            "https://github-readme-stats.vercel.app/api?username=${OWNER}&show_icons=true&hide_border=true&theme=transparent" \
-            -o assets/github-readme-stats.svg
-          curl -fsSL \
-            "https://github-readme-stats.vercel.app/api/top-langs/?username=${OWNER}&layout=compact&hide_border=true&theme=transparent" \
-            -o assets/github-top-langs.svg
+          stats_url="https://github-readme-stats.vercel.app/api?username=${OWNER}&show_icons=true&hide_border=true&theme=transparent"
+          langs_url="https://github-readme-stats.vercel.app/api/top-langs/?username=${OWNER}&layout=compact&hide_border=true&theme=transparent"
+
+          fetch_svg() {
+            local url="$1"
+            local out="$2"
+            local tmp="${out}.tmp"
+
+            if curl -fSL --retry 5 --retry-delay 3 --retry-all-errors "$url" -o "$tmp"; then
+              mv "$tmp" "$out"
+              return 0
+            fi
+
+            rm -f "$tmp"
+            echo "Warning: failed to fetch $url"
+            return 1
+          }
+
+          fetch_svg "$stats_url" "assets/github-readme-stats.svg" || true
+          fetch_svg "$langs_url" "assets/github-top-langs.svg" || true
 
       - name: Commit and push if changed
         run: |
