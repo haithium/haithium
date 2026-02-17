@@ -1,4 +1,4 @@
-# .github Profile
+## Hi there 👋
 
 ![GitHub Readme Stats](profile/stats.svg)
 ![Top Languages](profile/top-langs.svg)
