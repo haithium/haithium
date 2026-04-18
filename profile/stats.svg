@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Haitham Moahmed's GitHub Stats, Rank: A-</title>
-        <desc id="descId">Total Stars Earned: 114, Total Commits  (last year) : 1000, Total PRs: 39, Total Issues: 134, Contributed to (last year): 13</desc>
+        <desc id="descId">Total Stars Earned: 114, Total Commits  (last year) : 1006, Total PRs: 39, Total Issues: 134, Contributed to (last year): 13</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 94.03278818678994;
+        stroke-dashoffset: 93.9895967175911;
       }
     }
   
