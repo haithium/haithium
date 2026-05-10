@@ -8,8 +8,8 @@
         role="img"
         aria-labelledby="descId"
       >
-        <title id="titleId">Haitham Moahmed's GitHub Stats, Rank: A-</title>
-        <desc id="descId">Total Stars Earned: 115, Total Commits  (last year) : 1047, Total PRs: 40, Total Issues: 134, Contributed to (last year): 13</desc>
+        <title id="titleId">Haitham's GitHub Stats, Rank: A-</title>
+        <desc id="descId">Total Stars Earned: 115, Total Commits  (last year) : 1049, Total PRs: 40, Total Issues: 134, Contributed to (last year): 13</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 93.05436836102919;
+        stroke-dashoffset: 93.04166007819315;
       }
     }
   
@@ -126,7 +126,7 @@
         y="0"
         class="header"
         data-testid="header"
-      >Haitham Moahmed's GitHub Stats</text>
+      >Haitham's GitHub Stats</text>
     </g>
       </g>
     
